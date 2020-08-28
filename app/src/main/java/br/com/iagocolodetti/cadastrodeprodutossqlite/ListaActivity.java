@@ -14,7 +14,8 @@ public class ListaActivity extends ListActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
+        
+        @SuppressWarnings("unchecked")
         final ArrayList<Produto> lista = (ArrayList<Produto>) getIntent().getSerializableExtra("Produtos");
 
         ListView lv = getListView();
